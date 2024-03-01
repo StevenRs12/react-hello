@@ -1,18 +1,17 @@
 import React from "react";
 
-const Card = ({ product }) => {
+const Card = ({ character }) => {
     return (
         <div className="card-product">
             <div>
-                <label>  Nombre: {product.name}
+                <label>  Nombre: {character.name}
                 </label>
             </div>
             <div>
-                <label>  Precio: $ {product.price}
+                <label>  Estado: $ {character.status}
                 </label>
             </div>
-            <img src={product.image} alt="" />
-            <button>Comprar</button>
+            <img className="img-card" src={character.image} alt="" />
         </div>
     )
 }

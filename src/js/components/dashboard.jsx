@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Card from './card'
 
-const Dashboard = ({ products }) => {
-
-    useEffect(() => {
-        products.map((value) => {
-            console.log(value)
-        })
-    }, [])
+const Dashboard = ({ characters }) => {
 
     return (
         <div className='dashboard-container'>
-            {products.map((product) => <Card product={product} />)}
+            {characters.map((character) => <Card character={character} />)}
         </div>)
 }
 

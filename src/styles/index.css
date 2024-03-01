@@ -1,6 +1,6 @@
 .dashboard-container {
-    height: calc(100vh - 100px - 100px);
     display: flex;
+    flex-wrap: wrap;
 }
 
 .header-container {
@@ -13,7 +13,7 @@
 }
 
 .card-product {
-    height: 400px;
+    height: 200px;
     width: 300px;
     /* display: grid; */
     padding: 12px;
@@ -21,4 +21,9 @@
     border-radius: 6px;
     margin: 6px;
     background-color: #e3e3f2;
+}
+
+.img-card {
+    width: 100px;
+    height: 100px;
 }
