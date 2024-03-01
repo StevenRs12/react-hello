@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Card from './card'
 
-const Dashboard = ({ characters }) => {
+const Dashboard = ({ characters, handlerPrevPage, handlerNextPage }) => {
 
     return (
-        <div className='dashboard-container'>
-            {characters.map((character) => <Card character={character} />)}
-        </div>)
+        <>
+            <button onClick={handlerPrevPage}>Prev</button>
+            <button onClick={handlerNextPage}>Next</button>
+            <div className='dashboard-container'>
+                {characters.map((character, index) => <Card character={character} key={index} />)}
+            </div>
+        </>
+    )
 }
 
 export default Dashboard
